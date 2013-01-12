@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<script src="jquery.js"></script>
+<script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
+<!-- <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script> -->
+<script>
+$(document).ready(function(){
+  $("textarea").keyup(function(){
+    $("#vista").html($("#demo").val());
+  });
+});
+</script>
+</head>
+<body>
+<textarea id="demo"></textarea><br>
+<h1 id="vista">aqui</h1>
+</body>
+</html>
